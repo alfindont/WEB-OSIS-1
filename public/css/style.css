@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* ROOT */
+:root {
+  /* color */
+  --first-color: #4a2a2b;
+  --main-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  background: var(--first-color);
+}
+
+header {  
+  width: 95%;
+  background: #4F4142;
+  position: absolute;
+  top: 40px;
+  left: 33px;
+  padding: 7px 0px 7px 0px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.grid {
+  display: grid;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.section {
+  padding: 6rem 0 1rem;
+}
+
+/* Sticky Header */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 95%;
+  border-radius: 0px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__img {
+  width: 85px;
+  margin-left: 30px;
+}
+
+.nav__logo {
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem; 
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 10px;
+  font-size: 25px;
+  color: var(--main-color);
+}
+
+.nav__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.nav__list li {
+  list-style: none;
+  padding: 0px 30px 0px 30px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.nav__item a {
+  color: var(--main-color);
+  text-decoration: none;
+  transition: .3s;
+}
+
+.nav__item a:hover {
+  color: sienna;
+}
+
+.login__button {
+  border: none;
+  margin-right: 50px;
+  font-size: 20px;
+  background-color: var(--first-color);
+  border-radius: 12px;
+  padding: 15px 40px 15px 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.login__button:hover {
+  background-color: #4a2a2bd0;
+}
+
+a .login__button {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.img__container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.img__container img {
+  width: 80%;
+  height: 550px;
+  background: transparent;
+  border-right: 29px;
+  clip-path: polygon(0 0, 100% 0, 100% 77.5%, 87% 100%, 10% 100%, 0 79.2%);
+} 
+
+.bdr-clr {
+  margin: -350px 0px 0px 0px;
+}
+
+.bdr-clr img {
+  width: 121px;
+  height: 121px;
+  margin: -300px 0px 0px 0px;
+}
+
+.bdr-clr p {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-color);
+  rotate: 0deg;
+}
+
+.bxl-youtube,
+.bxl-instagram {
+  font-size: 40px;
+  color: var(--main-color);
+  padding: 7px;
+  rotate: 0deg;
+}
+
+.square1 {
+  background-color: var(--main-color);
+  position: relative;
+  width: 100%;
+  height: 85px;
+  margin: 170px 0px 0px 0px;
+}
+
+.square1 p {
+  font-size: 30px;
+  color: #111;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+  row-gap: .25rem;
+}
+
+.square2 {
+  width: 300px;
+  height: 115px;
+  margin: -190px 0px 0px 0px;
+  margin-left: 0px;
+  background-color: var(--main-color);
+}
+
+.square3 {
+  width: 300px fit-content;
+  height: 115px;
+  margin: -125px 0px 0px 1070px;
+  background-color: var(--main-color);
+}
+
+.square4 {
+  margin-top: 150px;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  background-color: var(--main-color);
+}
+
+.triangle1 {
+  width: 300px fit-content; 
+  height: 0px; 
+  margin: -530px 0px 0px 400px;
+  border-top: 530px solid transparent;   
+  border-right: 900px solid var(--main-color);
+}
+
+.about__container {
+  row-gap: 7.5rem;
+}
+
+.about__data {
+  font-size: 20px;
+}
+
+.section__title {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 30px 500px 0px 0px;
+  color: var(--main-color);
+}
+
+.section__title::before {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100px;
+  height: 1px;
+  background-color: var(--main-color);
+}
+
+.img__about {
+  width: 200px;
+  margin: 70px 0px 0px 890px;
+  z-index: 100;
+}
